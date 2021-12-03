@@ -1,0 +1,163 @@
+// Ionic Variables and Theming. For more info, please see:
+// http://ionicframework.com/docs/theming/
+// https://beta.ionicframework.com/docs/theming/color-generator
+/** Ionic CSS Variables **/
+:root {
+  /** fonts **/
+  /*============================== app ==============================*/
+  --app-font-family: "HelveticaNeue-Regular", "Roboto", sans-serif;
+  --app-img-path: '~/assets/img/';
+  /* *** */
+  --ion-color-primary: #cf6e56;
+  --ion-color-primary-rgb: 207, 110, 86;
+  --ion-color-primary-contrast: #000000;
+  --ion-color-primary-contrast-rgb: 0, 0, 0;
+  --ion-color-primary-shade: #b6614c;
+  --ion-color-primary-tint: #d47d67;
+  --ion-color-secondary: #232322;
+  --ion-color-secondary-rgb: 35, 35, 34;
+  --ion-color-secondary-contrast: #ffffff;
+  --ion-color-secondary-contrast-rgb: 255, 255, 255;
+  --ion-color-secondary-shade: #1f1f1e;
+  --ion-color-secondary-tint: #393938;
+  --ion-color-tertiary: #5260ff;
+  --ion-color-tertiary-rgb: 82, 96, 255;
+  --ion-color-tertiary-contrast: #ffffff;
+  --ion-color-tertiary-contrast-rgb: 255, 255, 255;
+  --ion-color-tertiary-shade: #4854e0;
+  --ion-color-tertiary-tint: #6370ff;
+  --ion-color-success: #009D57;
+  --ion-color-success-rgb: 0, 157, 87;
+  --ion-color-success-contrast: #ffffff;
+  --ion-color-success-contrast-rgb: 255, 255, 255;
+  --ion-color-success-shade: #008a4d;
+  --ion-color-success-tint: #1aa768;
+  --ion-color-warning: #ffe03e;
+  --ion-color-warning-rgb: 255, 224, 62;
+  --ion-color-warning-contrast: #000000;
+  --ion-color-warning-contrast-rgb: 0, 0, 0;
+  --ion-color-warning-shade: #e0c537;
+  --ion-color-warning-tint: #ffe351;
+  --ion-color-danger: #E12827;
+  --ion-color-danger-rgb: 225, 40, 39;
+  --ion-color-danger-contrast: #ffffff;
+  --ion-color-danger-contrast-rgb: 255, 255, 255;
+  --ion-color-danger-shade: #c62322;
+  --ion-color-danger-tint: #e43e3d;
+  --ion-color-dark: #1f2023;
+  --ion-color-dark-rgb: 31, 32, 35;
+  --ion-color-dark-contrast: #ffffff;
+  --ion-color-dark-contrast-rgb: 255, 255, 255;
+  --ion-color-dark-shade: #1b1c1f;
+  --ion-color-dark-tint: #353639;
+  --ion-color-medium: #232323;
+  --ion-color-medium-rgb: 35, 35, 35;
+  --ion-color-medium-contrast: #ffffff;
+  --ion-color-medium-contrast-rgb: 255, 255, 255;
+  --ion-color-medium-shade: #1f1f1f;
+  --ion-color-medium-tint: #393939;
+  --ion-color-light: #afacad;
+  --ion-color-light-rgb: 175, 172, 173;
+  --ion-color-light-contrast: #000000;
+  --ion-color-light-contrast-rgb: 0, 0, 0;
+  --ion-color-light-shade: #9a9798;
+  --ion-color-light-tint: #b7b4b5;
+  /*  --- */
+  --ion-color-report-section-bg: #F1F2F2;
+  --ion-color-report-section-bg-rgb: 241, 242, 242;
+  --ion-color-report-section-bg-contrast: #000000;
+  --ion-color-report-section-bg-contrast-rgb: 0, 0, 0;
+  --ion-color-report-section-bg-shade: #d4d5d5;
+  --ion-color-report-section-bg-tint: #f2f3f3;
+  /*  --- */
+  --ion-color-report-section-header: #414042;
+  --ion-color-report-section-header-rgb: 65, 64, 66;
+  --ion-color-report-section-header-contrast: #ffffff;
+  --ion-color-report-section-header-contrast-rgb: 255, 255, 255;
+  --ion-color-report-section-header-shade: #39383a;
+  --ion-color-report-section-header-tint: #545355;
+  /*  --- */
+  --ion-color-report-item-header: #F15B40;
+  --ion-color-report-item-header-rgb: 241, 91, 64;
+  --ion-color-report-item-header-contrast: #000000;
+  --ion-color-report-item-header-contrast-rgb: 0, 0, 0;
+  --ion-color-report-item-header-shade: #d45038;
+  --ion-color-report-item-header-tint: #f26b53;
+  /* --- */
+  --ion-color-report-item-header-warning: #EEC141;
+  --ion-color-report-item-header-warning-rgb: 238, 193, 65;
+  --ion-color-report-item-header-warning-contrast: #000000;
+  --ion-color-report-item-header-warning-contrast-rgb: 0, 0, 0;
+  --ion-color-report-item-header-warning-shade: #d1aa39;
+  --ion-color-report-item-header-warning-tint: #f0c754;
+  /* --- */
+  --ion-color-monitor-success: #67C18C;
+  --ion-color-monitor-success-rgb: 103, 193, 140;
+  --ion-color-monitor-success-contrast: #000000;
+  --ion-color-monitor-success-contrast-rgb: 0, 0, 0;
+  --ion-color-monitor-success-shade: #5baa7b;
+  --ion-color-monitor-success-tint: #76c798;
+  /* --- */
+  --ion-color-info: #448ecc;
+  --ion-color-info-rgb: 68, 142, 204;
+  --ion-color-info-contrast: #ffffff;
+  --ion-color-info-contrast-rgb: 255, 255, 255;
+  --ion-color-info-shade: #3c7db4;
+  --ion-color-info-tint: #5799d1;
+  /*=================== font-size ====================*/
+  --font-size-base: 1rem;
+  --font-size-08: calc(var(--font-size-base) * 0.5);
+  --font-size-10: calc(var(--font-size-base) * 0.625);
+  --font-size-12: calc(var(--font-size-base) * 0.75);
+  --font-size-14: calc(var(--font-size-base) * 0.875);
+  --font-size-16: calc(var(--font-size-base) * 1);
+  --font-size-18: calc(var(--font-size-base) * 1.125);
+  --font-size-20: calc(var(--font-size-base) * 1.25);
+  --font-size-22: calc(var(--font-size-base) * 1.375);
+  --font-size-24: calc(var(--font-size-base) * 1.5);
+  --font-size-26: calc(var(--font-size-base) * 1.625);
+  --font-size-28: calc(var(--font-size-base) * 1.75);
+  --font-size-30: calc(var(--font-size-base) * 1.875);
+  --font-size-32: calc(var(--font-size-base) * 2);
+  --font-size-34: calc(var(--font-size-base) * 2.125);
+  --font-size-36: calc(var(--font-size-base) * 2.25);
+  --font-size-38: calc(var(--font-size-base) * 2.375);
+  --font-size-40: calc(var(--font-size-base) * 2.5);
+  --font-size-42: calc(var(--font-size-base) * 2.625);
+  --font-size-44: calc(var(--font-size-base) * 2.75);
+  --font-size-46: calc(var(--font-size-base) * 2.875);
+  --font-size-48: calc(var(--font-size-base) * 3);
+  --font-size-50: calc(var(--font-size-base) * 3.125);
+  --font-size-52: calc(var(--font-size-base) * 3.25);
+  --font-size-54: calc(var(--font-size-base) * 3.375);
+  --font-size-56: calc(var(--font-size-base) * 3.5);
+  --font-size-58: calc(var(--font-size-base) * 3.625);
+  --font-size-60: calc(var(--font-size-base) * 3.75);
+  --font-size-62: calc(var(--font-size-base) * 3.875);
+  --font-size-64: calc(var(--font-size-base) * 4);
+  --font-size-66: calc(var(--font-size-base) * 4.125);
+  --font-size-68: calc(var(--font-size-base) * 4.25);
+  --font-size-70: calc(var(--font-size-base) * 4.375);
+  --font-size-72: calc(var(--font-size-base) * 4.5);
+  --font-size-74: calc(var(--font-size-base) * 4.625);
+  --font-size-76: calc(var(--font-size-base) * 4.75);
+  --font-size-78: calc(var(--font-size-base) * 4.875);
+  --font-size-80: calc(var(--font-size-base) * 5);
+  //
+  --app-page-padding: 1rem;
+  --app-control-radius: 0.8rem;
+  --app-color-01: #1a1c1e;
+  --app-color-02: #242323;
+  --app-color-03: #4a4745;
+  --app-color-04: #757173;
+  --app-color-05: #3f3d3f;
+  --app-color-06: #a5a5a5;
+  --app-color-07: #1d2124;
+  --app-color-08: #c5b892;
+  --app-color-09: #fff;
+  --app-color-10: #d2be84;
+  /**font**/
+  --app-font-condensed-bold: "HelveticaNeue-Condensed-Bold", "Roboto", sans-serif !important;
+  --app-font-condensed: "HelveticaNeue-Condensed", "Roboto", sans-serif !important;
+  --app-font-thin: "HelveticaNeue-Thin", "Roboto", sans-serif !important;
+}

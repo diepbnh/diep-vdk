@@ -1,0 +1,112 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-button href="/home">
+      <img src="/assets/svg/logo.svg" alt="CAR SCAN" width="110" />
+    </ion-button>
+    <ion-button slot="end">
+      <img src="/assets/svg/logo-oreilly.svg" alt="Oreilly" width="60" />
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
+<!-- content -->
+<ion-content class="ion-padding">
+  <h1>H1 Lorem ipsum dolor sit amet </h1>
+  <h2>h2 Lorem ipsum dolor sit amet </h2>
+  <h3>h3 Lorem ipsum dolor sit amet </h3>
+  <h4>h4 Lorem ipsum dolor sit amet </h4>
+  <h5>h5 Lorem ipsum dolor sit amet</h5>
+  <h6>h6 Lorem ipsum dolor sit amet </h6>
+  <p class="mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero commodi optio numquam suscipit culpa itaque dolor, atque vel doloribus dolores tenetur quam, est possimus, reiciendis dignissimos saepe quaerat! Consequuntur, voluptate.</p>
+  <ion-card class="app-card mb-3">
+    <span class="small">Keep close to Nature's heart... and break clear away, once in awhile, and climb a mountain or spend a week in the woods. Wash your spirit clean. </span>
+  </ion-card>
+  <ion-card class="app-card mb-3">
+    <ion-card-content> Keep close to Nature's heart... and break clear away, once in awhile, and climb a mountain or spend a week in the woods. Wash your spirit clean. </ion-card-content>
+  </ion-card>
+  <ion-card class="app-card mb-2">
+    <ion-card-content>
+      <p class="ion-text-center">Enter your Vehicle's VIN or License Plate</p>
+      <ion-grid>
+        <ion-row class="mb-2 justify-content-center">
+          <ion-col size="12" size-lg="10">
+            <ion-select placeholder="SELECT YEAR" interface="action-sheet" class="app-select app-input" cancel-text="Cancel">
+              <ion-select-option value="">1990</ion-select-option>
+              <ion-select-option value="">1980</ion-select-option>
+              <ion-select-option value="">1970</ion-select-option>
+            </ion-select>
+          </ion-col>
+        </ion-row>
+         <ion-row class="mb-2 justify-content-center">
+          <ion-col size="12" size-lg="10">
+            <ion-select placeholder="SELECT YEAR" interface="action-sheet" class="app-select app-input bg-primary" cancel-text="Cancel">
+              <ion-select-option value="">1990</ion-select-option>
+              <ion-select-option value="">1980</ion-select-option>
+              <ion-select-option value="">1970</ion-select-option>
+            </ion-select>
+          </ion-col>
+        </ion-row>
+       <ion-row class="mb-2 justify-content-center">
+          <ion-col size="12" size-lg="10">
+            <ion-select placeholder="SELECT MODAL" interface="action-sheet" class="app-select app-input app-bg10" cancel-text="Cancel">
+              <ion-select-option value="">1990</ion-select-option>
+              <ion-select-option value="">1980</ion-select-option>
+              <ion-select-option value="">1970</ion-select-option>
+            </ion-select>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+  </ion-card>
+  <ion-grid>
+    <ion-row class="mb-2">
+      <ion-col size="6">
+        <ion-input class="app-input"></ion-input>
+      </ion-col>
+      <ion-col size="6">
+        <ion-input class="app-input app-color-place" placeholder="PLEASE ENTER YOUR CURRENT MILEAGE"></ion-input>
+      </ion-col>
+    </ion-row>
+    <ion-row class="mb-2">
+      <ion-col>
+        <ion-card class="app-card">
+          <p class="text-warning text-condensed text-center">PLEASE ENTER YOUR CURRENT MILEAGE</p>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row class="mb-2">
+      <ion-col>
+        <ion-input class="app-input bg-primary" placeholder="VIN"></ion-input>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="6">
+        <ion-button class="app-input bg-01" expand="full">YES</ion-button>
+      </ion-col>
+      <ion-col size="3">
+        <ion-button class="app-input bg-02" expand="full">NO</ion-button>
+      </ion-col>
+      <ion-col size="3">
+        <ion-button class="app-input bg-03" expand="full">CANCEL</ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-button class="bg-warning app-input font-myriadpro-bold text-capitalize" expand="full">Start Here</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+<ion-footer class="ion-no-border">
+  <ion-toolbar>
+    <div class="d-flex align-items-center justify-content-between">
+      <div class="d-flex align-items-center">
+        <ion-select placeholder="English" cancel-text="Cancel" interface="action-sheet" class="app-select app-lang app-input" value="English">
+          <ion-select-option value="English">English</ion-select-option>
+          <ion-select-option value="Vn">Vn</ion-select-option>
+        </ion-select>
+        <span class="ml-2 app-font-small">Build XXXX Copyright ©2021 IEC. All Rights Reserved</span>
+      </div>
+      <span class="ion-text-end pl-1 app-font-small"> INNOVA Technical Center. Need help, call 1–800-544-4124 </span>
+    </div>
+  </ion-toolbar>
+</ion-footer>

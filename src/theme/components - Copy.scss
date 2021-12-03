@@ -1,0 +1,58 @@
+ion-button.app-button {
+	color: var(--app-color-10);
+	font-size: var(--font-size-20);
+	font-family: "HelveticaNeue-Condensed", "Roboto", sans-serif;
+	background: #000;
+	box-shadow: 0.06rem 0.1rem 0.3rem #000, -0.3rem -0.3rem 0.4rem -0.3rem #888;
+	height: 3.2rem;
+	--border-radius: var(--app-control-radius);
+	border-radius: var(--app-control-radius);
+}
+ion-input.app-input {
+	background: var(--app-color-10);
+	color: var(--app-color-03);
+	border-radius: var(--app-control-radius);
+	text-align: center;
+	font-family: "HelveticaNeue-Condensed", "Roboto", sans-serif;
+	background: var(--ion-color-light);
+	box-shadow: 0.06rem 0.1rem 0.1rem #000, inset 0 0.1rem 0.5rem #444;
+	--padding-bottom: 0.8rem;
+	--padding-top: 0.8rem;
+	--padding-start: 0.5rem;
+	--padding-end: 0.5rem;
+	--placeholder-color: #111;
+	font-size: var(--font-size-20);
+}
+ion-input.app-color-place {
+	--placeholder-color: var(--ion-color-warning);
+}
+ion-card.app-card {
+	padding: 0.8rem;
+	background: var(--app-color-07);
+	box-shadow: 0.06rem 0.1rem 0.3rem #000, -0.1rem -0.1rem 0.3rem #666;
+	color: #fff;
+	border-radius: var(--app-control-radius);
+	ion-card-content {
+		font-size: var(--font-size-base);
+	}
+}
+ion-select.app-select {
+	background: var(--app-color-10);
+	color: var(--app-color-03);
+	border-radius: var(--app-control-radius);
+	text-align: center;
+	font-family: "HelveticaNeue-Condensed", "Roboto", sans-serif;
+	background: var(--ion-color-light);
+	box-shadow: 0.06rem 0.02rem 0.3rem #000, -0.3rem -0.2rem 0.5rem -0.4rem #888;
+	height: 3.2rem;
+	--placeholder-color: #111;
+	font-size: var(--font-size-20);
+	letter-spacing: 0.05rem;
+}
+/*overite ion select*/
+.action-sheet-group.sc-ion-action-sheet-md:last-child{
+	button {
+		font-size: var(--font-size-20) !important;
+		font-family: "HelveticaNeue-Condensed", "Roboto", sans-serif;
+	}
+}

@@ -1,0 +1,93 @@
+ion-header {
+    ion-toolbar {
+        --background: #000;
+        --min-height: 40px;
+    }
+    ion-button {
+        --background: transparent;
+        --background-hover: transparent;
+    }
+}
+ion-footer {
+    ion-toolbar {
+        --background: var(--ion-color-dark);
+        --min-height: 50px;
+        --padding-end: var(--font-size-base);
+        --padding-start: var(--font-size-base);
+        --color: var(--app-color-06);
+    }
+}
+ion-select.app-lang {
+    font-size: 9px;
+    text-transform: capitalize;
+    color: var(--font-size-09);
+    --color:var(--font-size-09);
+    --padding-bottom: 0.1rem;
+    --padding-top: 0.1rem;
+    --padding-end: 0.2rem;
+    --padding-start: 0.45rem;
+    letter-spacing: 0.05rem;
+    height: 25px;
+    border-radius: 7px;
+    --border-radius: 7px;
+    --placeholder-color: var(--font-size-09);
+    background: var(--ion-color-dark);
+    --background: var(--ion-color-dark);
+    &::part(icon) {
+        zoom: 1.2;
+    }
+}
+ion-card-content {
+    ion-text {
+        color: var(--ion-color-dark);
+    }
+    .app-border-bottom {
+        border-bottom: 1px solid var(--ion-color-dark);
+        padding-bottom: 0.5rem;
+    }
+}
+.app-bg10 {
+    --background: var(--app-color-10);
+    background: var(--app-color-10);
+}
+.app-font-small {
+    font-size: var(--font-size-08);
+    line-height: 0.8rem;
+}
+ion-select.app-bg10 {
+    --placeholder-color: var(--ion-color-dark);
+}
+.text-capitalize {
+    text-transform: capitalize
+}
+ion-button.bg-warning {
+    color: #000;
+    --background: var(--ion-color-warning);
+}
+.text-uppercase {
+    text-transform: uppercase;
+}
+.app-underline {
+    text-decoration: underline;
+}
+/*scroll bar*/
+.app-scroll-content {
+    background: var(--app-color-07);
+    height: 100vh;
+    padding-right: 1rem;
+    overflow-y: scroll;
+    &::-webkit-scrollbar {
+        width: 1.2rem;
+        background: var(--app-color-07);
+        border-radius: 1.5rem;
+        box-shadow: inset 3px 3px 2px 1px #0d0f11;
+    }
+    &::-webkit-scrollbar-track {
+        border-radius: 1rem;
+    }
+    &::-webkit-scrollbar-thumb {        
+        background: #434243;
+        box-shadow: inset 3px 3px 5px -2px rgba(255,255,255,0.5), 1px 4px 8px -5px #000;
+        border-radius: 1rem;
+    }
+}

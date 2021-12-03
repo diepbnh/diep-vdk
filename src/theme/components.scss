@@ -1,0 +1,55 @@
+.app-input {
+	font-family: var(--app-font-condensed);
+	font-size: var(--font-size-20);
+	height: 3.2rem;
+	--border-radius: var(--app-control-radius);
+	border-radius: var(--app-control-radius);
+	text-align: center;
+	letter-spacing: 0.05rem;
+	color: var(--app-color-05);
+	overflow: hidden;
+	--placeholder-opacity: 1;
+}
+ion-button.app-input {
+	color: var(--app-color-09);
+	box-shadow: 0.06rem 0.1rem 0.3rem #000, -0.3rem -0.3rem 0.4rem -0.3rem #888;
+}
+ion-input.app-input {
+	background: var(--ion-color-light);
+	box-shadow: 0.06rem 0.1rem 0.1rem #000, inset 0 0.1rem 0.5rem #444;
+	--padding-start: 0.8rem;
+	--padding-end: 0.8rem;
+	--placeholder-color: #111;
+}
+ion-input.app-color-place {
+	--placeholder-color: var(--ion-color-warning) !important;
+}
+ion-card.app-card {
+	padding: 0.8rem;
+	background: var(--app-color-07);
+	box-shadow: 0.06rem 0.1rem 0.3rem #000, -0.1rem -0.1rem 0.3rem #666;
+	color: var(--app-color-09);
+	border-radius: var(--app-control-radius);
+	ion-card-content {
+		font-size: var(--font-size-base);
+	}
+}
+ion-select.app-select {
+	background: var(--ion-color-light);
+	box-shadow: 0.06rem 0.02rem 0.3rem #000, -0.3rem -0.2rem 0.5rem -0.4rem #888;
+	--placeholder-color: #111;
+	placeholder-color: #111;
+}
+
+/*overite ion select*/
+.action-sheet-group.sc-ion-action-sheet-md:last-child {
+	button {
+		font-size: var(--font-size-20);
+		font-family: var(--app-font-condensed);
+	}
+}
+ion-select.app-select::part(icon) {
+	zoom: 3;
+	opacity: 1;
+	transform: scale(0.6, 1);
+}
