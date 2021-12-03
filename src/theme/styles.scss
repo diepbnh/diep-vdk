@@ -20,8 +20,8 @@ ion-footer {
 ion-select.app-lang {
     font-size: 9px;
     text-transform: capitalize;
-    color: var(--font-size-09);
-    --color:var(--font-size-09);
+    color: var(--app-color-09);
+    --color: var(--app-color-09);
     --padding-bottom: 0.1rem;
     --padding-top: 0.1rem;
     --padding-end: 0.2rem;
@@ -30,7 +30,7 @@ ion-select.app-lang {
     height: 25px;
     border-radius: 7px;
     --border-radius: 7px;
-    --placeholder-color: var(--font-size-09);
+    --placeholder-color: var(--app-color-09);
     background: var(--ion-color-dark);
     --background: var(--ion-color-dark);
     &::part(icon) {
@@ -70,6 +70,61 @@ ion-button.bg-warning {
 .app-underline {
     text-decoration: underline;
 }
+.app-icon-findout {
+    position: relative;
+    padding: 0.5rem 7rem;
+    display: inline-block;
+    &:before,
+    &:after {
+        content: "";
+        position: absolute;
+        height: 100%;
+        top: 0;
+        height: 4rem;
+        width: 5.5rem;
+    }
+    &:before {
+        left: 0;
+        background: url(/assets/img/home_check.png) center no-repeat;
+        background-size: contain;
+    }
+    &:after {
+        right: 0;
+        background: url(/assets/img/home_abs.png) center no-repeat;
+        background-size: contain;
+    }
+}
+.app-ico {
+    position: relative;
+    font-size: var(--font-size-14);
+    padding-right:2rem;
+    line-height: 1rem;
+    width: 100%;
+    &:after {
+        content: "";
+        position: absolute;
+        right: -1rem;
+        top: 0;
+        height: calc(100% + 0.1rem);
+        width: 3rem;
+    }
+    &.app-icon-pin:after {
+        background: url(/assets/svg/icon_pin.svg) center right no-repeat;
+        background-size: contain;
+    }
+     &.app-icon-map:after {
+        background: url(/assets/svg/icon_map.svg) center right no-repeat;
+        background-size: contain;
+    }
+     &.app-icon-icon01:after {
+        background: url(/assets/svg/icon_icon01.svg) center right no-repeat;
+        background-size: contain;
+    }
+     &.app-icon-code:after {
+        background: url(/assets/svg/icon_code.svg) center right no-repeat;
+        background-size: contain;
+    }
+}
 /*scroll bar*/
 .app-scroll-content {
     background: var(--app-color-07);
@@ -85,9 +140,9 @@ ion-button.bg-warning {
     &::-webkit-scrollbar-track {
         border-radius: 1rem;
     }
-    &::-webkit-scrollbar-thumb {        
+    &::-webkit-scrollbar-thumb {
         background: #434243;
-        box-shadow: inset 3px 3px 5px -2px rgba(255,255,255,0.5), 1px 4px 8px -5px #000;
+        box-shadow: inset 3px 3px 5px -2px rgba(255, 255, 255, 0.5), 1px 4px 8px -5px #000;
         border-radius: 1rem;
     }
 }

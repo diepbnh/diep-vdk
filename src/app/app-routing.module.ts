@@ -31,6 +31,10 @@ const routes: Routes = [
     path: 'privacy-policy-hyperlink',
     loadChildren: () => import('./pages/privacy-policy-hyperlink/privacy-policy-hyperlink.module').then( m => m.PrivacyPolicyHyperlinkPageModule)
   },
+  {
+    path: 'enter-vehicle-info',
+    loadChildren: () => import('./pages/enter-vehicle-info/enter-vehicle-info.module').then( m => m.EnterVehicleInfoPageModule)
+  },
 ];
 
 @NgModule({
