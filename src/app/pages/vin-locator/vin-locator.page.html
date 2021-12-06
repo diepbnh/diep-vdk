@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-button slot="start" href="/home">
+      <img src="/assets/svg/logo.svg" alt="CAR SCAN" width="110" />
+    </ion-button>
+    <ion-button slot="end">
+      <img src="/assets/svg/logo-oreilly.svg" alt="Oreilly" width="60" />
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
+<!-- content -->
+<ion-content class="ion-padding">
+  <div class="text-center mb-4">
+    <h1>VIN Locator</h1>
+    <h3>Look for the VIN in these locations</h3>
+  </div>
+  <ion-card class="app-card text-center mb-3">
+    <ion-card-content class="py-3">
+      <h4>From your vehicle</h4>
+      <p class="text-thin">Reference Driver's door / b-pillar and the base of the windshield</p>
+      <img src="/assets/svg/vin_locator.svg" alt="From your vehicle" class="w-75">
+    </ion-card-content>
+  </ion-card>
+  <ion-card class="app-card text-center mb-4">
+    <ion-card-content>
+      <h4>Insurance card or refistration</h4>
+      <img src="/assets/svg/vin_locator_img01.svg" alt="Insurance card or refistration" class="w-65 ml-5">
+    </ion-card-content>
+  </ion-card>
+  <p class="text-center w-70 mx-auto">
+    <ion-button class="app-input bg-03" expand="full">back</ion-button>
+  </p>
+</ion-content>
+<ion-footer class="ion-no-border">
+  <ion-toolbar>
+    <div class="d-flex align-items-center justify-content-between">
+      <div class="d-flex align-items-center">
+        <ion-select placeholder="English" cancel-text="Cancel" interface="action-sheet" class="app-select app-lang app-input" value="English">
+          <ion-select-option value="English">English</ion-select-option>
+          <ion-select-option value="Vn">Vn</ion-select-option>
+        </ion-select>
+        <span class="ml-2 app-font-small">Build XXXX Copyright ©2021 IEC. All Rights Reserved</span>
+      </div>
+      <span class="ion-text-end pl-1 app-font-small"> INNOVA Technical Center. Need help, call 1–800-544-4124 </span>
+    </div>
+  </ion-toolbar>
+</ion-footer>

@@ -1,0 +1,85 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-button slot="start" href="/home">
+      <img src="/assets/svg/logo.svg" alt="CAR SCAN" width="110" />
+    </ion-button>
+    <ion-button slot="end">
+      <img src="/assets/svg/logo-oreilly.svg" alt="Oreilly" width="60" />
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
+<!-- content -->
+<ion-content class="ion-padding">
+  <h2 class="text-center">Vehicle Inspection Instructions</h2>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="8">
+        <span class="font-size-18">Want to take the instructions with you?<br> Send them to your mobile device</span>
+      </ion-col>
+      <ion-col size="2" class="text-right d-flex justify-content-end">
+        <ion-button class="app-input bg-03 app-btn-small w-100">text</ion-button>
+      </ion-col>
+      <ion-col size="2" class="text-right d-flex justify-content-end">
+        <ion-button class="app-input bg-03 app-btn-small w-100">email</ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="6">
+        <ion-card class="app-card">
+          <img src="/assets/svg/step_01.svg" alt="Step 01" />
+        </ion-card>
+      </ion-col>
+      <ion-col size="6">
+        <ion-card class="app-card">
+          <img src="/assets/svg/step_02.svg" alt="Step 02" />
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-card class="app-card text-medium font-size-14 text-uppercase">
+          <img src="/assets/svg/step_03.svg" alt="Step 03" />
+          <ion-grid>
+            <ion-row class="mb-2 pl-4 pl-lg-6">
+              <ion-col size="2" class="text text-condensed">MAKE:</ion-col>
+              <ion-col size="10" class="text-thin">toyota</ion-col>
+              <ion-col size="2" class="text text-condensed">YEAR:</ion-col>
+              <ion-col size="10" class="text-thin">2021</ion-col>
+              <ion-col size="2" class="text text-condensed">MODEL:</ion-col>
+              <ion-col size="10" class="text-thin">CAMRY</ion-col>
+            </ion-row>
+          </ion-grid>
+          <img src="/assets/svg/step_04.svg" alt="Step 04" class="app-img-04" />
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-card class="app-card">
+          <img src="/assets/svg/step_05.svg" alt="Step 05" />
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-card class="app-card pb-0">
+          <img src="/assets/svg/step_06.svg" alt="Step 06" />
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+<ion-footer class="ion-no-border">
+  <ion-toolbar>
+    <div class="d-flex align-items-center justify-content-between">
+      <div class="d-flex align-items-center">
+        <ion-select placeholder="English" cancel-text="Cancel" interface="action-sheet" class="app-select app-lang app-input" value="English">
+          <ion-select-option value="English">English</ion-select-option>
+          <ion-select-option value="Vn">Vn</ion-select-option>
+        </ion-select>
+        <span class="ml-2 app-font-small">Build XXXX Copyright ©2021 IEC. All Rights Reserved</span>
+      </div>
+      <span class="ion-text-end pl-1 app-font-small"> INNOVA Technical Center. Need help, call 1–800-544-4124 </span>
+    </div>
+  </ion-toolbar>
+</ion-footer>

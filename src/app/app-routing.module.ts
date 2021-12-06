@@ -35,6 +35,22 @@ const routes: Routes = [
     path: 'enter-vehicle-info',
     loadChildren: () => import('./pages/enter-vehicle-info/enter-vehicle-info.module').then( m => m.EnterVehicleInfoPageModule)
   },
+  {
+    path: 'verify-vehicle',
+    loadChildren: () => import('./pages/verify-vehicle/verify-vehicle.module').then( m => m.VerifyVehiclePageModule)
+  },
+  {
+    path: 'vin-locator',
+    loadChildren: () => import('./pages/vin-locator/vin-locator.module').then( m => m.VinLocatorPageModule)
+  },
+  {
+    path: 'report',
+    loadChildren: () => import('./pages/report/report.module').then( m => m.ReportPageModule)
+  },
+  {
+    path: 'vehicle-inspection-report',
+    loadChildren: () => import('./pages/vehicle-inspection-report/vehicle-inspection-report.module').then( m => m.VehicleInspectionReportPageModule)
+  },
 ];
 
 @NgModule({

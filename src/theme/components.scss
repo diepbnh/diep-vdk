@@ -1,3 +1,4 @@
+
 .app-input {
 	font-family: var(--app-font-condensed);
 	font-size: var(--font-size-20);
@@ -13,13 +14,20 @@
 ion-button.app-input {
 	color: var(--app-color-09);
 	box-shadow: 0.06rem 0.1rem 0.3rem #000, -0.3rem -0.3rem 0.4rem -0.3rem #888;
+	padding-end: 1rem;
+	padding-start: 1rem;
 }
+
+.app-input.app-btn-small {
+	height: 2.5rem;
+	font-size: var(--font-size-19);
+}
+
 ion-input.app-input {
 	background: var(--ion-color-light);
 	box-shadow: 0.06rem 0.1rem 0.1rem #000, inset 0 0.1rem 0.5rem #444;
 	--padding-start: 0.8rem;
 	--padding-end: 0.8rem;
-	--placeholder-color: #111;
 }
 ion-input.app-color-place {
 	--placeholder-color: var(--ion-color-warning) !important;
@@ -37,10 +45,13 @@ ion-card.app-card {
 ion-select.app-select {
 	background: var(--ion-color-light);
 	box-shadow: 0.06rem 0.02rem 0.3rem #000, -0.3rem -0.2rem 0.5rem -0.4rem #888;
-	--placeholder-color: #111;
-	placeholder-color: #111;
+	&.app-color-01 {
+		color: var(--app-color-04);
+		background: var(--ion-color-light);
+		placeholder-color: var(--app-color-04);
+		--placeholder-color: var(--app-color-04);
+	}
 }
-
 /*overite ion select*/
 .action-sheet-group.sc-ion-action-sheet-md:last-child {
 	button {
