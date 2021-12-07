@@ -1,4 +1,3 @@
-
 .app-input {
 	font-family: var(--app-font-condensed);
 	font-size: var(--font-size-20);
@@ -17,12 +16,10 @@ ion-button.app-input {
 	padding-end: 1rem;
 	padding-start: 1rem;
 }
-
 .app-input.app-btn-small {
 	height: 2.5rem;
 	font-size: var(--font-size-19);
 }
-
 ion-input.app-input {
 	background: var(--ion-color-light);
 	box-shadow: 0.06rem 0.1rem 0.1rem #000, inset 0 0.1rem 0.5rem #444;
@@ -50,6 +47,17 @@ ion-select.app-select {
 		background: var(--ion-color-light);
 		placeholder-color: var(--app-color-04);
 		--placeholder-color: var(--app-color-04);
+	}
+}
+ion-progress-bar.app-progress-bar {
+	height: 1.8rem;
+	border-radius: 0.5rem;
+	&::part(progress) {
+		box-shadow: 0.4rem 0.2rem 5rem #000, inset 0 0rem 0.7rem #000;
+		border-radius: 0.5rem;
+	}
+	&::part(track) {
+		background: var(--app-color-07);
 	}
 }
 /*overite ion select*/

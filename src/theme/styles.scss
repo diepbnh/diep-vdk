@@ -60,6 +60,15 @@ ion-select.app-bg10 {
 .text-capitalize {
     text-transform: capitalize
 }
+.app-modal {
+    background: #000;
+    border-radius: var(--app-control-radius);
+    padding: 1.5rem;
+    color: var(--app-color-09);
+    ion-button{
+    box-shadow:none;
+}
+}
 ion-button.bg-warning {
     color: #000;
     --background: var(--ion-color-warning);
@@ -94,25 +103,34 @@ ion-button.bg-warning {
         background-size: contain;
     }
 }
-.app-img-04{
+.app-img-04 {
     position: absolute;
     right: 1rem;
     bottom: 1rem;
     width: 55vw;
-
-
 }
-.line-height-0{
+.line-height-0 {
     line-height: 0
 }
-.rounded-bottom-1{
+.rounded-bottom-1 {
     border-bottom-right-radius: 1rem;
     border-bottom-left-radius: 1rem;
+}
+.app-rotate {
+    animation: rotate 6s linear infinite;
+}
+@keyframes rotate {
+    0% {
+        transform: rotate(-360deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 .app-ico {
     position: relative;
     font-size: var(--font-size-14);
-    padding-right:2rem;
+    padding-right: 2rem;
     line-height: 1rem;
     width: 100%;
     &:after {
@@ -127,15 +145,15 @@ ion-button.bg-warning {
         background: url(/assets/svg/icon_pin.svg) center right no-repeat;
         background-size: contain;
     }
-     &.app-icon-map:after {
+    &.app-icon-map:after {
         background: url(/assets/svg/icon_map.svg) center right no-repeat;
         background-size: contain;
     }
-     &.app-icon-icon01:after {
+    &.app-icon-icon01:after {
         background: url(/assets/svg/icon_icon01.svg) center right no-repeat;
         background-size: contain;
     }
-     &.app-icon-code:after {
+    &.app-icon-code:after {
         background: url(/assets/svg/icon_code.svg) center right no-repeat;
         background-size: contain;
     }
