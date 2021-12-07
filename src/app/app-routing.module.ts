@@ -51,6 +51,10 @@ const routes: Routes = [
     path: 'vehicle-inspection-report',
     loadChildren: () => import('./pages/vehicle-inspection-report/vehicle-inspection-report.module').then( m => m.VehicleInspectionReportPageModule)
   },
+  {
+    path: 'template-modal',
+    loadChildren: () => import('./pages/template-modal/template-modal.module').then( m => m.TemplateModalPageModule)
+  },
 ];
 
 @NgModule({

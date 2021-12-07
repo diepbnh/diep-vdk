@@ -1,9 +1,53 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>report</ion-title>
+    <ion-button slot="start" href="/home">
+      <img src="/assets/svg/logo.svg" alt="CAR SCAN" width="110" />
+    </ion-button>
+    <ion-button slot="end">
+      <img src="/assets/svg/logo-oreilly.svg" alt="Oreilly" width="60" />
+    </ion-button>
   </ion-toolbar>
 </ion-header>
-
-<ion-content>
-
+<!-- content -->
+<ion-content class="ion-padding">
+  <h3 class="text-center mb-3">Thanks You For Using the Diagnostic Station</h3>
+  <div class="d-flex justify-content-between">
+    <p class="text-thin font-size-16 w-60">Your Vehicle Health Report has been sent via email / text (if selected) Please present your Vehicle Health Report to store staff to learn more about part availability, pricing and commercial shop referral options for servicing your vehicle.</p>
+    <div class="w-40">
+      <ion-card class="app-card text-center text-thin">
+        
+          <p class="text-thin mb-0">Returning <span class="text-uppercase">HOME</span> in ...</p>
+          <span class="text-danger mb-0 text-condensed font-size-38">514</span>
+          <p class="mb-0">seconds</p>
+       
+      </ion-card>
+    </div>
+  </div>
+  <!-- scroll content -->
+  <ion-card class=app-card>
+    <ion-card-content class="p-0">
+      <div class="d-flex align-items-center mb-2">
+        <ion-button class="app-input bg-03 mr-2 w-15">text</ion-button>
+        <ion-button class="app-input bg-03 mr-4 w-15">email</ion-button>
+        <ion-label class="text-condensed font-size-22">SKIP</ion-label>
+      </div>
+      <div class="app-scroll-content line-height-0 rounded-bottom-1 text-center">
+        <img src="/assets/svg/report.svg" alt="CAR SCAN" />
+      </div>
+    </ion-card-content>
+  </ion-card>
 </ion-content>
+<ion-footer class="ion-no-border">
+  <ion-toolbar>
+    <div class="d-flex align-items-center justify-content-between">
+      <div class="d-flex align-items-center">
+        <ion-select placeholder="English" cancel-text="Cancel" interface="action-sheet" class="app-select app-lang app-input" value="English">
+          <ion-select-option value="English">English</ion-select-option>
+          <ion-select-option value="Vn">Vn</ion-select-option>
+        </ion-select>
+        <span class="ml-2 app-font-small">Build XXXX Copyright ©2021 IEC. All Rights Reserved</span>
+      </div>
+      <span class="ion-text-end pl-1 app-font-small"> INNOVA Technical Center. Need help, call 1–800-544-4124 </span>
+    </div>
+  </ion-toolbar>
+</ion-footer>

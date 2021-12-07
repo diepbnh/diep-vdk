@@ -102,6 +102,13 @@ ion-button.bg-warning {
 
 
 }
+.line-height-0{
+    line-height: 0
+}
+.rounded-bottom-1{
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
 .app-ico {
     position: relative;
     font-size: var(--font-size-14);
