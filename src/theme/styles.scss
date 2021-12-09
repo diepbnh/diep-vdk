@@ -65,9 +65,9 @@ ion-select.app-bg10 {
     border-radius: var(--app-control-radius);
     padding: 1.5rem;
     color: var(--app-color-09);
-    ion-button{
-    box-shadow:none;
-}
+    ion-button {
+        box-shadow: none;
+    }
 }
 ion-button.bg-warning {
     color: #000;
@@ -115,6 +115,36 @@ ion-button.bg-warning {
 .rounded-bottom-1 {
     border-bottom-right-radius: 1rem;
     border-bottom-left-radius: 1rem;
+}
+.app-lanch {
+    position: relative;
+    &:after,
+    &:before {
+        content: "";
+        position: absolute;
+       
+    }
+    &:after {
+        width: 12rem;
+        height: 12rem;
+        background: url(../assets/svg/app_logo02.svg) no-repeat right bottom;
+        background-size: contain;
+        right: 0;
+        bottom: 0;
+    }
+    &:before {
+        left: 0;
+        top: 0;
+        width: 12rem;
+        height: 12rem;
+        background: url(../assets/svg/app_logo01.svg) no-repeat right bottom;
+        background-size: contain;
+       z-index: 1;
+    }
+    img{
+    position: relative;
+    z-index:2;
+}
 }
 .app-rotate {
     animation: rotate 6s linear infinite;

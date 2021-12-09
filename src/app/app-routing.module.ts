@@ -55,6 +55,22 @@ const routes: Routes = [
     path: 'template-modal',
     loadChildren: () => import('./pages/template-modal/template-modal.module').then( m => m.TemplateModalPageModule)
   },
+  {
+    path: 'contact-us',
+    loadChildren: () => import('./pages/contact-us/contact-us.module').then( m => m.ContactUsPageModule)
+  },
+  {
+    path: 'app-launch-screen',
+    loadChildren: () => import('./pages/app-launch-screen/app-launch-screen.module').then( m => m.AppLaunchScreenPageModule)
+  },
+  {
+    path: 'dlc-location',
+    loadChildren: () => import('./pages/dlc-location/dlc-location.module').then( m => m.DlcLocationPageModule)
+  },
+  {
+    path: 'what-do-i-get',
+    loadChildren: () => import('./pages/what-do-i-get/what-do-i-get.module').then( m => m.WhatDoIGetPageModule)
+  },
 ];
 
 @NgModule({

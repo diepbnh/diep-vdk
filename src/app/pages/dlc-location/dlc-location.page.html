@@ -1,0 +1,82 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-button slot="start" href="/home">
+      <img src="/assets/svg/logo.svg" alt="CAR SCAN" width="110" />
+    </ion-button>
+    <ion-button slot="end">
+      <img src="/assets/svg/logo-oreilly.svg" alt="Oreilly" width="60" />
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
+<!-- content -->
+<ion-content class="ion-padding text-center">
+  <h3 class="pt-2">Locate Your Vehicle's Data Link Connection (DLC) </h3>
+  <h6>Congratulations, your vehicle inspection was successful! We just need a little more information to generate your report. </h6>
+  <h6 class="mb-3">Please provide your vehicle information below</h6>
+  <ion-card class="app-card">
+    <ion-card-content>
+      <h4 class="mb-3">Please select your Vehicle</h4>
+      <div class="w-80 mx-auto">
+        <p class="mb-3">
+          <!-- option 1 -->
+          <ion-select placeholder="SELECT YEAR" interface="action-sheet" class="app-select app-input">
+            <ion-select-option value="2021">2021</ion-select-option>
+            <ion-select-option value="2020">2020</ion-select-option>
+            <ion-select-option value="1990">1990</ion-select-option>
+            <ion-select-option value="1990">1990</ion-select-option>
+            <ion-select-option value="1990">1990</ion-select-option>
+          </ion-select>
+        </p>
+        <p class="mb-3">
+          <ion-select placeholder="SELECT MAKE" interface="action-sheet" class="app-select app-input app-color-01">
+            <ion-select-option value="Lorem ipsum 1">Lorem ipsum 1</ion-select-option>
+            <ion-select-option value="Lorem ipsum 2">Lorem ipsum 2</ion-select-option>
+            <ion-select-option value="Lorem ipsum 3">Lorem ipsum 3</ion-select-option>
+            <ion-select-option value="Lorem ipsum">Lorem ipsum 4</ion-select-option>
+          </ion-select>
+        </p>
+        <p class="mb-1">
+          <ion-select placeholder="SELECT MODAL" interface="action-sheet" class="app-select app-input bg-10">
+            <ion-select-option value="2021">2021</ion-select-option>
+            <ion-select-option value="2020">2020</ion-select-option>
+          </ion-select>
+        </p>
+      </div>
+    </ion-card-content>
+  </ion-card>
+  <p class="text-center text-condensed my-3 font-size-26">OR</p>
+  <ion-card class="app-card mb-4">
+    <ion-card-content class="text-center py-3">
+      <h4 class="mb-3">Enter your Vehicle's VIN or License Plate</h4>
+      <div class="w-80 mx-auto">
+        <p class="d-flex justify-content-between align-items-center mb-3">
+          <ion-button class="app-input bg-01 w-50 app-btn-small">VIN</ion-button>
+          <ion-button class="app-input bg-03 w-50 ml-3 app-btn-small">plate</ion-button>
+        </p>
+        <ion-input class="app-input" placeholder="VIN"></ion-input>
+      </div>
+    </ion-card-content>
+  </ion-card>
+  <!--  -->
+
+    <!-- End Show error -->
+    <div class="d-flex justify-content-between">
+      <ion-button class="app-input d-block bg-03 w-35 mr-3" href="./home">CANCEL</ion-button>
+      <ion-button class="app-input d-block bg-02 w-65">NEED HELP FINDING YOUR VIN?</ion-button>
+    </div>
+
+</ion-content>
+<ion-footer class="ion-no-border">
+  <ion-toolbar>
+    <div class="d-flex align-items-center justify-content-between">
+      <div class="d-flex align-items-center">
+        <ion-select placeholder="English" cancel-text="Cancel" interface="action-sheet" class="app-select app-lang app-input" value="English">
+          <ion-select-option value="English">English</ion-select-option>
+          <ion-select-option value="Vn">Vn</ion-select-option>
+        </ion-select>
+        <span class="ml-2 app-font-small">Build XXXX Copyright ©2021 IEC. All Rights Reserved</span>
+      </div>
+      <span class="ion-text-end pl-1 app-font-small"> INNOVA Technical Center. Need help, call 1–800-544-4124 </span>
+    </div>
+  </ion-toolbar>
+</ion-footer>

@@ -86,7 +86,7 @@
       </div>
     </ion-card-content>
   </ion-card>
-  <p class="text-center text-condensed my-3">OR</p>
+  <p class="text-center text-condensed my-3 font-size-26">OR</p>
   <!-- option 2 -->
   <ion-card class="app-card mb-3">
     <ion-card-content class="text-center py-3">
@@ -100,7 +100,7 @@
     </ion-card-content>
   </ion-card>
   <!-- end option 2-->
-  <p class="text-center text-condensed my-3">OR</p>
+  <p class="text-center text-condensed my-3 font-size-26">OR</p>
   <ion-card class="app-card mb-4">
     <ion-card-content class="text-center py-3">
       <h4 class="mb-3">Enter your Vehicle's VIN or License Plate</h4>
@@ -113,8 +113,22 @@
       </div>
     </ion-card-content>
   </ion-card>
+  <!-- end option 2-->
+  <p class="text-center text-condensed my-3 font-size-26">OR</p>
+  <ion-card class="app-card mb-4">
+    <ion-card-content class="text-center py-3">
+      <h4 class="mb-3">Enter your Vehicle's VIN or License Plate</h4>
+      <div class="w-80 mx-auto">
+        <p class="d-flex justify-content-between align-items-center mb-3">
+          <ion-button class="app-input bg-01 w-50 app-btn-small">VIN</ion-button>
+          <ion-button class="app-input bg-03 w-50 ml-3 app-btn-small">plate</ion-button>
+        </p>
+        <ion-input class="app-input" placeholder="VIN"></ion-input>
+      </div>
+    </ion-card-content>
+  </ion-card>
   <!-- option 3-->
-  <p class="text-center text-condensed my-3">OR</p>
+  <p class="text-center text-condensed my-3 font-size-26">OR</p>
   <ion-card class="app-card mb-4">
     <ion-card-content class="text-center py-3">
       <h4 class="mb-3">Enter your Vehicle's VIN</h4>
@@ -127,13 +141,13 @@
     </ion-card-content>
   </ion-card>
   <!-- end option 3-->
-  <div class="text-center">
+  <div class="text-center mb-5">
     <div class="w-80 mx-auto px-4">
       <p>
         <ion-button class="app-input d-block bg-02 mb-3">NEED HELD FINDING YOUR VIN?</ion-button>
       </p>
       <!-- Show error -->
-      <p class="text-danger mb-3 text-thin font-size-12">Please provide your vehicle information</p>
+      <p class="text-danger mb-3 text-thin font-size-14">Please provide your vehicle information</p>
       <!-- End Show error -->
       <div class="d-flex justify-content-between">
         <ion-button class="app-input d-block bg-03 w-50 mr-3" href="./home">CANCEL</ion-button>
@@ -141,6 +155,22 @@
       </div>
     </div>
   </div>
+  <!-- option 4 -->
+  <div class="text-center">
+    <div class="w-80 mx-auto px-4">
+      <p>
+        <ion-button class="app-input d-block bg-02 mb-3">NEED HELD FINDING YOUR VIN?</ion-button>
+      </p>
+      <!-- Show error -->
+      <p class="text-danger mb-3 text-thin font-size-14">Please select make</p>
+      <!-- End Show error -->
+      <div class="d-flex justify-content-between">
+        <ion-button class="app-input d-block bg-03 w-50 mr-3" href="./home">CANCEL</ion-button>
+        <ion-button class="app-input d-block bg-02 w-50">CONTINUE</ion-button>
+      </div>
+    </div>
+  </div>
+  <!-- end option 4 -->
 </ion-content>
 <ion-footer class="ion-no-border">
   <ion-toolbar>
